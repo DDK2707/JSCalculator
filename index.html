@@ -8,73 +8,73 @@
     <title>Dale's Calculator</title>
 </head>
 <body>
-    <div class="calculator p-5 mx-auto">
+    <div class="calculator p-5 mx-auto ">
         <div id="output" class="border border-dark mb-3 h-50 p-3"></div>
         <div class="buttons">
+            <div class="row mb-3">
+                <div class="col">
+                    <button class="btn btn-warning  w-100" onclick="deleteChar()">DEL</button>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('7')">7</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('8')">8</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('9')">9</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info w-100" onclick="addToSum('/')">/</button>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('4')">4</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('5')">5</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('6')">6</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info w-100" onclick="addToSum('*')">*</button>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('1')">1</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('2')">2</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('3')">3</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info w-100" onclick="addToSum('+')">+</button>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <button class="btn btn-success w-100" onclick="evaluateSum('')">=</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary w-100" onclick="addToSum('0')">0</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info w-100" onclick="addToSum()">.</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info w-100" onclick="addToSum('-')">-</button>
+                </div>
+            </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-warning" onclick="deleteChar()">DEL</button>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('7')">7</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('8')">8</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('9')">9</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info" onclick="addToSum('/')">/</button>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('4')">4</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('5')">5</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('6')">6</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info" onclick="addToSum('*')">*</button>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('1')">1</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('2')">2</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('3')">3</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info" onclick="addToSum('+')">+</button>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <button class="btn btn-secondary" onclick="addToSum('0')">0</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info" onclick="addToSum('.')">.</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-success" onclick="evaluateSum()">=</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info" onclick="addToSum('-')">-</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-danger" onclick="clearSum()">CLEAR</button>
+                    <button class="btn btn-danger w-100" onclick="clearSum()">CLEAR</button>
                 </div>
             </div>
         </div>
